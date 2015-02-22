@@ -10,6 +10,7 @@
         <item >Foreground</item>
         <item >Background</item>
         <item >Background with Sync</item>
+        <item >Playvideo</item>
     </string-array>
 
 </resources>

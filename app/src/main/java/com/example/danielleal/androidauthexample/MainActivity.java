@@ -32,6 +32,7 @@ public class MainActivity extends ListActivity {
         super.onCreate(icicle);
         String[] items = getResources().getStringArray(R.array.main_activity_items);
         this.setListAdapter( new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items));
+
     }
 
     @Override
@@ -40,11 +41,17 @@ public class MainActivity extends ListActivity {
         Intent intent = new Intent(this, HelloActivity.class);
         if (position == 0) {
             intent.putExtra(HelloActivity.TYPE_KEY, HelloActivity.Type.FOREGROUND.name());
+            startActivity(intent);
         } else if (position == 1) {
             intent.putExtra(HelloActivity.TYPE_KEY, HelloActivity.Type.BACKGROUND.name());
+            startActivity(intent);
         } else if (position == 2) {
             intent.putExtra(HelloActivity.TYPE_KEY, HelloActivity.Type.BACKGROUND_WITH_SYNC.name());
+            startActivity(intent);
+        }else{
+            Intent video = new Intent(this, YoutubePlayer.class);
+            startActivity(video);
         }
-        startActivity(intent);
+
     }
 }

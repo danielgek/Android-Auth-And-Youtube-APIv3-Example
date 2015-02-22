@@ -29,4 +29,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:6.5.87'
     compile 'com.google.apis:google-api-services-youtube:v3-rev128-1.19.1'
     compile files('libs/google-http-client-android-1.19.0.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
 }

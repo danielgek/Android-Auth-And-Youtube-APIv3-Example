@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.danielleal.androidauthexample.YoutubePlayer"
+            android:label="@string/app_name" >
+
+        </activity>
         <activity android:name="com.example.danielleal.androidauthexample.HelloActivity">
         </activity>
 
